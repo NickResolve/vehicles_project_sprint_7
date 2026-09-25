@@ -5,6 +5,9 @@ import streamlit as st
 # Leer los datos del archivo CSV
 car_data = pd.read_csv('vehicles_us.csv')
 
+# Crear el título de la aplicación Streamlit
+st.header('Análisis de anuncios de venta de coches')
+
 # crear una casilla de verificación por cada tipo de gráfico
 build_histogram = st.checkbox('Construir un histograma')
 build_scatter = st.checkbox('Construir un gráfico de dispersión')
